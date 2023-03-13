@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Golf Shaft Selector</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h1>Hello, World!</h1>
-  <script src="script.js"></script>
-</body>
+<html>
+  <head>
+    <title>Golf Shaft Selector</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Golf Shaft Selector</h1>
+    </header>
+    <main>
+      <form>
+        <label for="swing-speed">Swing Speed:</label>
+        <input type="number" id="swing-speed" name="swing-speed" required>
+        <br>
+        <label for="ball-flight">Ball Flight:</label>
+        <select id="ball-flight" name="ball-flight" required>
+          <option value="">--Please select--</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <br>
+        <button type="submit">Find Shaft</button>
+      </form>
+      <div id="results"></div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Golf Shaft Selector</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
